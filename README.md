@@ -1,4 +1,4 @@
-# test-extension
+# Test Extension
 
 > testing extension
 
