@@ -99,7 +99,10 @@ function getContent(message) {
 }
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-    cl("message for background:", message);
+    
+    if(message.from === "content") {
+        // cl("message for background:", message);
+    }
     if(message.from === "popup") {
         // sendResponse({from: "background", data: "background accept popup message"})
     }

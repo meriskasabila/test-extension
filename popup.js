@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-    cl("message for popup:", message);
+    console.log("message for popup:", message);
     // if (message.action === "myAction") {
     //   console.log("Pesan diterima dari popup:", message.data);
     // }

@@ -28,9 +28,9 @@ function randomNumber() {
 let interval = setInterval(() => {
     if(stackMessage.length > 0) {
         console.log(stackMessage[0])
-            chrome.runtime.sendMessage(tabs[0].id, { from: "content", body: {phone: randomNumber(), message: "send number success!"} });
+            chrome.runtime.sendMessage({ from: "content", body: {phone: randomNumber(), message: "send number success!"} });
         stackMessage.splice(0, 1)
     }else{
         console.log("stackMessage DONE!")
     }
-}, 1000);
+}, 2000);
